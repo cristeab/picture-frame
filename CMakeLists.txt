@@ -1,6 +1,13 @@
 project(plasma-frame)
 
 find_package(KDE4 REQUIRED)
+include (KDE4Defaults)
+include(MacroLibrary)
+include(MacroOptionalDependPackage)
+
+add_definitions (${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
+add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
+include_directories (${KDE4_INCLUDES})
 
 macro_optional_find_package(Kexiv2)
 macro_log_feature(KEXIV2_FOUND "libkexiv2" "Library to access EXIF information" "http://www.kde.org" FALSE "0.2.0" "RECOMMENDED: Enables automatic rotation for frame applet" )
