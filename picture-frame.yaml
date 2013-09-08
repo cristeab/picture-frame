@@ -16,3 +16,7 @@ PkgConfigBR:
 ConfigOptions:
     - "%{cmake_kde_options}"
 Builder: cmake
+Files:
+    - "%{_kde_modulesdir}/*.so"
+    - "%{_kde_servicesdir}/*.desktop"
+    - "%{_kde_appsdir}/plasma-applet-frame/"
