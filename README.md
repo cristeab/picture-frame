@@ -11,7 +11,8 @@ In order to generate *.spec file from *.yaml file you need to install [Spectacle
 
     specify picture-frame.yaml
 
-From the same folder, generate the source archive with:    
+From the same folder, generate the source archive with:
+
     git archive --format=tar --prefix=picture-frame-1.0/ HEAD | bzip2 > picture-frame-1.0.tar.bz2
 
 The following files must be uploaded into a Mer OBS package:
