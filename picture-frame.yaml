@@ -1,7 +1,9 @@
 Name: picture-frame
 Summary: Picture Frame
 Version: 1.0
-Group: Plasma/Applet
+Release: 1
+Group: Amusements/Graphics
+URL: http://userbase.kde.org/Plasma/PictureFrame
 License: GPLv2+
 Sources:
     - "%{name}-%{version}.tar.bz2"
