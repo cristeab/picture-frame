@@ -12,4 +12,8 @@ Requires:
 PkgBR:
     - kdelibs-devel
 PkgConfigBR:
+    - x11
     - exiv2
+ConfigOptions:
+    - "%{cmake_kde_options}"
+Builder: cmake
